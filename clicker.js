@@ -25,7 +25,7 @@ class Struct {
     name = "placeholder";
     amount = 0;
     buy() {
-        if (berries > this.price()) {
+        if (berries >= this.price()) {
             this.amount++;
             berries -= this.price();
             UpdateText();
