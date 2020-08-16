@@ -8,6 +8,7 @@ function UpdateText() {
         $("#structslist").append(`<div id="s_${i}" class="struct"><img src="${struct.icon}" width="40px"> <a href="#" onclick="Buy(${i});return false;"><small>  ${struct.amount}  </small></a> <span>${struct.name} &nbsp;<img src="img/blue.png" width="16px">&nbsp;<small>${struct.price()}</small></span></div>`);
     }
     $("title").text(`${ Math.floor(berries) } Berries - Berry Scented Clicker`);
+    $("#structurestext").text(`Structures (${bps} BPS)`)
 }
 
 function Buy(item) {
@@ -64,7 +65,7 @@ let basket = new Basket();
 let bush = new Bush();
 
 let structures = [basket, bush];
-
+let bps = 0;
 $(() => {
 
     $("#berry").click(() => {
@@ -78,7 +79,7 @@ $(() => {
         $(".ber").removeClass("small");
     })
     setInterval(() => {
-        let bps = 0;
+        bps = 0;
         for (let s of structures)
             bps += s.bps() * s.amount;
         berries += bps;
