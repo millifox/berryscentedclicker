@@ -1,0 +1,146 @@
+@font-face {
+    font-family: 'Hip';
+    src: url('font/hipchick/hipch___-webfont.woff2') format('woff2'), url('font/hipchick/hipch___-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'kronika';
+    src: url('font/kronika/kronika_-webfont.woff2') format('woff2'), url('font/kronika/kronika_-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    background-color: #ffb6c1;
+    width: 100%;
+    height: 100%;
+}
+
+.logo {
+    width: 300px;
+    height: 200px;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+.structs {
+    position: fixed;
+    margin-left: 10px;
+    bottom: 0px;
+    background-color: rgba(80, 80, 80, 0.6);
+    width: 300px;
+    height: 450px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+#structslist {
+    overflow: scroll;
+    overflow-x: hidden;
+    height: 92%;
+    width: 317px;
+}
+
+.struct {
+    border-color: rgba(80, 80, 80, 0.6);
+    border-style: solid;
+    border-radius: 3px;
+    font-family: 'Hip';
+    font-size: 2em;
+    margin: 4px;
+    background: rgba(80, 80, 80, 0.3);
+    padding: 2px;
+    width: 94%;
+    height: 50px;
+    text-decoration: none;
+}
+
+.red {
+    color: red!important;
+}
+
+.struct>img {
+    top: 6px;
+    position: relative;
+    margin-right: -37px;
+    z-index: -1;
+}
+
+.struct>span {
+    margin-left: 12px;
+}
+
+.struct>a {
+    text-decoration: none;
+    color: black;
+}
+
+.berryup {
+    position: fixed;
+    margin-left: 650px;
+    bottom: 0px;
+    background-color: rgba(80, 80, 80, 0.6);
+    width: 600px;
+    height: 450px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.rightab {
+    position: fixed;
+    right: 10px;
+    bottom: 0px;
+    background-color: rgba(80, 80, 80, 0.6);
+    width: 300px;
+    height: 450px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.sect {
+    width: auto;
+    height: 40px;
+    background-color: rgba(80, 80, 80, 0.3);
+    font-family: 'Hip';
+    font-size: 2em;
+    color: peachpuff;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.berry {
+    margin-left: 800px;
+}
+
+.ber {
+    transition: transform 0.1s ease-out;
+    -webkit-user-drag: none;
+    -khtml-user-drag: none;
+    -moz-user-drag: none;
+    -o-user-drag: none;
+    user-drag: none;
+}
+
+.small {
+    transform: scale(1)!important;
+}
+
+.ber:hover {
+    transform: scale(1.2);
+}
+
+.marg {
+    margin-left: 10px;
+}
+
+.amount {
+    display: block;
+    font-family: 'Hip';
+    font-size: 4em;
+    margin-left: 0;
+    margin-right: 0;
+}
